@@ -50,6 +50,7 @@ nav ul li a {
 
     font-size: 25px;
     display: none;
+    cursor: pointer;
 }
 
 input{
@@ -95,23 +96,25 @@ input{
 
 .slider {
   width: 100%;
-  max-width: 98%;
-  margin: 10px auto;
+  max-width: 100%;
   position: relative;
   overflow: hidden;
-  border-radius: 10px;
+  border-radius: 5px;
+  /* margin-top: 100px; */
+  
 }
 
 .slides {
   display: flex;
   transition: transform 0.5s ease;
+  
 }
 
 .slides img {
   width: 100%;
   flex-shrink: 0;
-  height: 500px;
-  
+  height: 400px;
+  z-index: -99;  
 }
 
 /* buttons */
@@ -152,12 +155,13 @@ input{
     nav ul {
 
         position: absolute;
+        /* height: 5900px; */
         top: 110px;
         left: 0;
         right: 0;
         flex-direction: column;
         text-align: center;
-        background-color:rgb(245, 244, 235);
+        background-color:rgb(233, 233, 231);
         gap: 0;
         overflow: hidden;
     }

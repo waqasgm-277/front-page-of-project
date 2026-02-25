@@ -15,13 +15,13 @@ function toggleMenu(){
 
 
 
-const slides = document.querySelector('.slides');
+const slides = document.querySelector('.slides')
 const images = document.querySelectorAll('.slides img');
 
 let index = 0;
 
 function showSlide() {
-  slides.style.transform = `translateX(-${index * 100}%)`;
+  slides.style.transform = `translateX(-${index * 100}%)`
 }
 
 document.querySelector('.next').addEventListener('click', () => {
