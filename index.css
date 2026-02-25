@@ -266,7 +266,7 @@ input{
   animation-play-state: paused;
 }
 
-/* Brand text (BIG like your screenshot) */
+
 .brand {
   margin: 0 80px;
   font-size: 48px;
@@ -282,7 +282,7 @@ input{
   transform: scale(1.05);
 }
 
-/* Keyframes — seamless loop */
+
 @keyframes marquee {
   from {
     transform: translateX(0);
@@ -292,7 +292,7 @@ input{
   }
 }
 
-/* ===== Responsive ===== */
+
 @media (max-width: 768px) {
   .brand {
     font-size: 28px;
