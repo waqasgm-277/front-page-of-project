@@ -1,3 +1,5 @@
+              //  navbar responsive li starts 
+
 let menu_list = document.getElementById("menu_list");
 menu_list.style.maxHeight = "0px"
 
@@ -12,6 +14,10 @@ function toggleMenu(){
         menu_list.style.maxHeight = "0px"
     }
 }
+
+                      //  navbar responsive li over 
+
+                      // discounnt bar starts here 
 
 const announcements = document.querySelectorAll('.announcement');
 const bar = document.getElementById('announcementBar');
@@ -39,15 +45,12 @@ bar.addEventListener('mouseleave', startTicker);
 
 startTicker();
 
+                      // discounts bar ends here 
 
 
 
 
-
-
-
-
-
+                      // slider starts here 
 
 const slides = document.querySelector('.slides')
 const images = document.querySelectorAll('.slides img');
@@ -72,4 +75,20 @@ document.querySelector('.prev').addEventListener('click', () => {
     index = images.length - 1;
   }
   showSlide();
-});
+});                      
+
+                      // slider ends here bruh
+
+
+
+
+
+
+
+
+
+
+
+
+
+
