@@ -177,7 +177,7 @@ input{
 }
 
 /* next and prev btns */
-.btn {
+.mybtn{
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -200,6 +200,14 @@ input{
 
 .btn:hover {
   background: rgba(0,0,0,0.7);
+}
+
+@media (max-width:690px){
+
+  .slider img{
+
+    height: 200px;
+  }
 }
 
           /* sldier ends  */
@@ -246,6 +254,30 @@ input{
     box-shadow: 0 5px 15px rgba(212, 226, 218, 0.25);
 }
 
+
+@media (max-width: 770px) {
+    .circle-card img {
+        width: 90px;
+        height: 90px;
+    }
+
+    .circle-card p {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 470px) {
+    .circle-section {
+        gap: 15px;
+    }
+
+    .circle-card img {
+        width: 75px;
+        height: 75px;
+    }
+}
+
+
              /* age section over  */
 
           /*  Infinite Brand names  */
@@ -253,7 +285,7 @@ input{
   width: 100%;
   height: 100px;
   overflow: hidden;
-  background-color: #fc9bef;
+  /* background-color: #fc9bef; */background:linear-gradient(135deg, #6febd6, rgb(255, 141, 179), #fac47a);
   padding: 15px 0;
   margin-bottom: 100px;
   font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
@@ -296,13 +328,19 @@ input{
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 680px) {
   .brand {
-    font-size: 28px;
+    font-size: 15px;
     margin: 0 40px;
+    
   }
-}
 
+
+.brand-marquee{
+
+  height: 60px;
+}
+}
 @media (max-width: 480px) {
   .brand {
     font-size: 22px;
@@ -313,29 +351,7 @@ input{
                       /* infinit brands name ends here  */
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+                      /* navabr responsiveness starts here  */
              
 
 @media (max-width:1150px) {
@@ -352,7 +368,8 @@ input{
         right: 0;
         flex-direction: column;
         text-align: center;
-        background-color:rgb(233, 233, 231);
+        background-color:rgb(255, 255, 255);
+        opacity: 99;
         gap: 0;
         overflow: hidden;
     }
@@ -376,7 +393,7 @@ input{
     #menu_list{
 
         transition: all 0.5s ;
-        z-index: 10;
+        z-index: 11;
     }
     input{
 
@@ -392,39 +409,29 @@ input{
         display: none;
     }
 
-  
-
-    .slider img{
-
-        height: 300px ;
-    }
-   
-
-
-
 }
 
+                 /* navbar respnsivenes ends here  */
 
+.pro-name {
 
-
-@media (max-width: 770px) {
-    .circle-card img {
-        width: 90px;
-        height: 90px;
-    }
-
-    .circle-card p {
-        font-size: 13px;
-    }
+  display: inline;
 }
 
-@media (max-width: 470px) {
-    .circle-section {
-        gap: 15px;
-    }
+.pro-discription {
 
-    .circle-card img {
-        width: 75px;
-        height: 75px;
-    }
+  padding: 5px;
+  font-size: 17px;
+}
+
+.pro-rating{
+
+   margin: 0;
+}
+
+.pro-price{
+
+  font-size: 30px;
+  font-family:'Times New Roman';
+  display: inline;
 }
