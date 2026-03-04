@@ -1,0 +1,421 @@
+/* ================= GLOBAL ================= */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none; 
+    
+a, 
+a:hover, 
+a:focus, 
+a:active, 
+a:visited {
+    text-decoration: none !important;
+}
+}
+
+/* ================= NAVBAR ================= */
+nav {
+    width: 100%;
+    height: 110px;
+    padding: 10px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    background-color: rgb(75, 116, 151);
+    z-index: 1000;
+}
+
+/* UL */
+nav ul {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+
+/* LI */
+nav ul li {
+    position: relative;
+    list-style: none;
+}
+
+/* Links */
+nav ul li a {
+    color: rgb(2, 25, 18);
+    font-weight: bold;
+    font-size: 14px;
+    padding: 10px 5px;
+    display: block;
+    text-decoration: none; 
+}
+
+nav ul li a:hover {
+    color: black;
+    text-decoration: none; 
+}
+
+/* ================= DROPDOWN ================= */
+nav ul li ul {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 180px;
+    background-color: #fff;
+    border-radius: 6px;
+    display: none;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    z-index: 2000;
+}
+
+nav ul li ul li {
+    width: 100%;
+}
+
+nav ul li ul li a {
+    padding: 10px;
+    font-size: 13px;
+    color: #333;
+}
+
+nav ul li ul li ul {
+    top: 0;
+    left: 100%;
+}
+
+/* Hover + Focus-within */
+nav ul li:hover > ul,
+nav ul li:focus-within > ul {
+    display: block;
+}
+
+/* ================= SEARCH ================= */
+.search-container {
+    display: flex;
+    align-items: center;
+}
+
+input {
+    border-radius: 20px;
+    height: 35px;
+    width: 250px;
+    padding-left: 15px;
+    font-size: 13px;
+    border: none;
+    outline: none;
+}
+
+.icon-btn {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: none;
+    background-color: rgb(7, 181, 212);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin-left: -40px;
+}
+
+#search-icon {
+    font-size: 14px;
+    color: white;
+}
+
+/* ================= MENU ICON ================= */
+.menu {
+    font-size: 28px;
+    color: white;
+    cursor: pointer;
+    display: none; 
+}
+
+/* ================= MOBILE RESPONSIVE ================= */
+@media (max-width: 1150px) {
+
+    .menu {
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 40px;
+        z-index: 2001;
+    }
+
+    nav ul {
+        position: absolute;
+        top: 110px;
+        left: 0;
+        width: 100%;
+        flex-direction: column;
+        background: white;
+        overflow: hidden;
+        max-height: 0;
+        transition: max-height 0.5s ease;
+        gap: 0;
+        padding: 0 20px;
+    }
+
+    nav ul.active {
+        max-height: 1000px;
+    }
+
+    nav ul li {
+        padding: 12px 0;
+        border-bottom: 1px solid #eee;
+        width: 100%;
+    }
+
+    nav ul li a {
+        color: #222;
+        padding: 8px 0;
+        text-decoration: none;
+    }
+
+    /* ================= MOBILE DROPDOWN FIX ================= */
+    nav ul li ul {
+        position: static;
+        width: 100%;
+        display: none;
+    }
+
+    nav ul li:hover > ul,
+    nav ul li:focus-within > ul {
+        display: block;
+    }
+
+    nav ul li ul li {
+        padding: 8px 15px;
+        /* border-bottom: 1px solid #ddd; */
+    }
+
+    nav ul li ul li a {
+        color: #222;
+        /* padding: 12px 15px; */
+        font-size: 14px;
+        display: block;
+        text-decoration: none;
+    }
+
+       
+    nav ul li:hover > ul,
+    nav ul li:focus-within > ul {
+        display: initial !important;
+    }
+
+    /* Search bar  */
+    .search-container {
+        width: 100%;
+        margin: 15px 20px;
+        justify-content: center;
+    }
+
+    input {
+        width: 85%;
+        max-width: 300px;
+        margin-left: 0;
+    }
+
+    .icon-btn {
+        margin-left: -45px;
+    }
+}
+
+
+/* ================= ANNOUNCEMENT BAR ================= */
+.announcement-bar {
+  width: 100%;
+  height: 40px;
+  background: linear-gradient(90deg, rgb(223, 56, 209), rgb(255, 89, 47));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+}
+
+.announcement-wrapper {
+  position: relative;
+  height: 36px;
+  width: 100%;
+}
+
+.announcement {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+  color: #fff;
+  transform: translateY(100%);
+  opacity: 0;
+  transition: 0.6s ease;
+}
+
+.announcement.active {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.announcement.exit {
+  transform: translateY(-100%);
+  opacity: 0;
+}
+
+/* ================= SLIDER ================= */
+.slider {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.slides {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.slides img {
+  width: 100%;
+  flex-shrink: 0;
+  height: 400px;
+}
+
+.mybtn{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.5);
+  color: white;
+  border: none;
+  font-size: 20px;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.prev { left: 15px; }
+.next { right: 15px; }
+
+.mybtn:hover {
+  background: rgba(0,0,0,0.8);
+}
+
+/* ================= CIRCLE SECTION ================= */
+.circle-section {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    padding: 20px 10px;
+    flex-wrap: wrap;
+    background-color: #fff;
+}
+
+.circle-card {
+    text-align: center;
+    color: #333;
+}
+
+.circle-card img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid rgb(228, 100, 100);
+    transition: 0.3s ease;
+}
+
+.circle-card:hover img {
+    transform: scale(1.08);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.circle-card p {
+    margin-top: 8px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+/* ================= BRAND MARQUEE ================= */
+.brand-marquee {
+  width: 100%;
+  height: 100px;
+  overflow: hidden;
+  background: linear-gradient(135deg, #6febd6, rgb(255, 141, 179), #fac47a);
+  padding: 15px 0;
+  margin-bottom: 100px;
+}
+
+.brand-track {
+  display: flex;
+  width: max-content;
+  animation: marquee 18s linear infinite;
+}
+
+.brand-marquee:hover .brand-track {
+  animation-play-state: paused;
+}
+
+.brand {
+  margin: 0 80px;
+  font-size: 40px;
+  font-weight: 700;
+  color: #111;
+  white-space: nowrap;
+  transition: 0.3s ease;
+}
+
+.brand:hover {
+  color: #fff;
+  transform: scale(1.05);
+}
+
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+/* ================= CARD ================= */
+.pro-name {
+  display: inline;
+}
+
+.pro-discription {
+  padding: 5px;
+  font-size: 17px;
+}
+
+.pro-rating{
+   margin: 0;
+}
+
+.pro-price{
+  font-size: 30px;
+  font-family:'Times New Roman';
+  display: inline;
+}
+
+/* ================= RESPONSIVE SMALL ================= */
+@media (max-width:600px){
+
+    .slides img{
+        height: 200px;
+    }
+
+    .circle-section{
+        gap: 25px;
+    }
+
+    .brand{
+        font-size: 18px;
+        margin: 0 25px;
+    }
+
+    .circle-card img{
+        width: 90px;
+        height: 90px;
+    }
+
+    input {
+        width: 78%;
+    }
+}
