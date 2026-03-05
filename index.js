@@ -116,24 +116,22 @@ document.querySelector('.prev').addEventListener('click', () => {
  .then (response => response.json())
  .then(json => {
 
-    for (let val of json){
-
-
+    for (let data of json){
 
       html +=   `
-      <div class="col-lg-3 col-md-4 col-sm-6 col-12" style="margin-top: 20px;">
-      <div class="card" style="width: 18rem;border: none;"  >
+      <div class="col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center" ">
+      <div class="card" style="width: 16rem;border: none;"  >
 
-               <img src="${val.p_image}" alt="..."  style="border-radius: 20px;">
+               <img src="${data.p_image}" alt="..."  style="border-radius: 20px;">
 
            <div class="card-body">
 
-         <h4 class="card-title pro-name">${val.p_name}</h4>
-        <div class="pro-description">${val.p_description}</div>
+         <h4 class="card-title pro-name">${data.p_name}</h4>
+        <div class="pro-description">${data.p_description}</div>
           <p class="pro-rating"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
-          <p class="pro-price">price <span style="font-size: 30px;">${val.p_price}</span></p>
+          <p class="pro-price">price <span style="font-size: 30px;">${data.p_price}</span></p>
     
-     <button class="btn btn-primary view" data-id="${val.p_id}" style="height: 40px;width: 100%;border-radius: 40px; background:linear-gradient(135deg, #bf00e6, #f69, #ff9f1a);; outline: none; border:none; color: white;margin-top: 3px;">View More</button>
+     <button class="btn btn-primary view" data-id="${data.p_id}" style="height: 40px;width: 100%;border-radius: 40px; background:linear-gradient(135deg, #bf00e6, #f69, #ff9f1a);; outline: none; border:none; color: white;margin-top: 3px;">View More</button>
   </div>
 </div>
 </div>`
@@ -141,49 +139,51 @@ document.querySelector('.prev').addEventListener('click', () => {
 
     }
 
-       document.getElementById('myrow').innerHTML = html
+       document.getElementById('p-list').innerHTML = html
 
 
  })
 
 
-// modal 
+// modal view on click 
 
 
-$(document).on('click','view',function(e){
+$(document).on('click','.view',function(e){
 
   e.preventDefault();
 
   let myid = $(this).data('id')
 
-  let pro;
 
-  fetch('data.json')  //json string se js object convert hogya
+  fetch('index.json')  //json string se js object convert hogya
 
-.then(response => response.json)
+.then(response => response.json())
 .then(json =>{
 
-  for (let product of json){
+  let p ;
 
-      if (product.p_id == myid){
+  for (let data of json){
 
-        pro = product
+      if (data.p_id == myid){
+
+        p = data
 
         break;
       }
   }
 
-  $('#image').attr('src',pro.p_image)
-  $('#title').html(pro.p_name)
-  $('#price').html(pro.p_price)
-  $('#discription').html(pro.p_discription)
+  $('#image').attr('src',p.p_image)
+  $('#name').html(p.p_name)
+  $('#price').html(p.p_price)
+  $('#description').html(p.p_description)
 
 
 
 
 })
 
-new bootstrap.modal(document.getElementById('mymodal')).show()
+ let modal = new bootstrap.Modal(document.getElementById('modal'));
+  modal.show();
 
 })
 

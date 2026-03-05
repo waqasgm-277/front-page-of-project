@@ -6,7 +6,7 @@
     "p_description":"its the best toy you will get for your kid",
     "P_rating":"5",
     "p_price":"1400",
-    "p_image":""
+    "p_image":"/cards-images/1_1946x_51c57159-bb7d-4ac9-8f0b-7bf659a3f88e_375x.webp"
 },
 
 {
@@ -15,7 +15,7 @@
     "p_description":"its the best toy you will get for your kid",
     "P_rating":"5",
     "p_price":"8678",
-    "p_image":"card-images/MTB06645_400x.webp"
+    "p_image":"/cards-images/1d27f378-3577-4a3b-ac55-914965ea8f55_375x.webp"
 },
 
 {
@@ -24,7 +24,7 @@
     "p_description":"its the best toy you will get for your kid",
     "P_rating":"5",
     "p_price":"1234",
-    "p_image":"card-images/MTB06645_400x.webp"
+    "p_image":"/cards-images/4_13f3f0c8-b84c-4349-bb5e-c6546e693a04_375x.webp"
 },
 
 {
@@ -33,14 +33,45 @@
     "p_description":"its the best toy you will get for your kid",
     "P_rating":"5",
     "p_price":"1111",
-    "p_image":"card-images/MTB06645_400x.webp"
+    "p_image":"/cards-images/4b324880-217d-499d-8708-91238cb7dad8_375x.webp"
+},
+
+{
+    "p_id": 5,
+    "p_name": "card4345",
+    "p_description":"its45 the best toy you will get for your kid",
+    "P_rating":"345",
+    "p_price":"134511",
+    "p_image":"/cards-images/4b324880-217d-499d-8708-91238cb7dad8_375x.webp"
+},
+
+
+{
+    "p_id": 3,
+    "p_name": "card3",
+    "p_description":"its the best toy you will get for your kid",
+    "P_rating":"5",
+    "p_price":"1234",
+    "p_image":"/cards-images/4_13f3f0c8-b84c-4349-bb5e-c6546e693a04_375x.webp"
+},
+
+{
+    "p_id": 2,
+    "p_name": "card2",
+    "p_description":"its the best toy you will get for your kid",
+    "P_rating":"5",
+    "p_price":"8678",
+    "p_image":"/cards-images/1d27f378-3577-4a3b-ac55-914965ea8f55_375x.webp"
+},
+
+{
+    "p_id": 1,
+    "p_name": "card1",
+    "p_description":"its the best toy you will get for your kid",
+    "P_rating":"5",
+    "p_price":"1400",
+    "p_image":"/cards-images/1_1946x_51c57159-bb7d-4ac9-8f0b-7bf659a3f88e_375x.webp"
 }
-
-
-
-
-
-
 
 
 
