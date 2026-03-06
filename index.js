@@ -187,5 +187,53 @@ $(document).on('click','.view',function(e){
 
 })
 
+// add to cart 
+
+$(document).on(click,'#add-cart',function(){
+
+
+  let product = $(this).data('product');
+
+  let qty = parseInt(localStorage.getItem('cart'))  || []
+
+  let found = false 
+
+  for (let item of cart ) {
+
+    if (item.id == product.id){
+        item.qty += qty;
+        found = true
+      break;
+
+    }
+  }
+
+
+  if(!found) {
+
+    product.qty = qty;
+    cart.push(product);
+
+  }
+
+
+  localStorage.setItem('cart',JSON.stringify('cart')) || []
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+})
 
 

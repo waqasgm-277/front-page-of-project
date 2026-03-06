@@ -14,7 +14,7 @@
                         <!-- navbar starts -->
    <nav>
     
-        <img src="/logo/ChatGPT Image Mar 4, 2026, 08_42_03 PM.png" style="width: 300px;" alt="logo" >
+        <img src="/logo/ChatGPT Image Mar 4, 2026, 08_42_03 PM.png" style="width: 300px;" alt="logo"  >
     
     <ul id="menu_list">
         <li><a href="">HOME</a></li>
@@ -140,7 +140,7 @@
               <!-- modal here  -->
 
 <div class="modal fade" tabindex="-1"  id="modal">
-  <div class="modal-dialog modal-xl modal-dialog-center">
+  <div class="modal-dialog modal-lg modal-dialog-center">
     <div class="modal-content">
       <div class="modal-header">
         <h5 class="modal-title" id="modal-title">Modal title</h5>
@@ -153,19 +153,27 @@
        <div class="row">
           <div class="col-md-6 text-center">
 
-               <img src="/cards-images/4b324880-217d-499d-8708-91238cb7dad8_375x.webp" class="card-img-top" alt="..."  style="border-radius: 20px; " id="image">
+               <img src="" class="card-img-top" alt="..."  style="border-radius: 20px; " id="image">
 
                </div>
 
 
-           <div class="col-md-6">
+           <div class="col-md-3">
 
          <h4 class="card-title pro-name" id="name" ></h4>
         <div class="pro-discription"     id="description"></div>
           <p class="pro-rating"          id="rating" ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
           <p class="pro-price"  >price <span style="font-size: 30px;"></span></p>
+
+          <label class="mt-2  fs-3"  >Quantity</label>
+           <input type="number" id="m-qty" value="1" min="1" class="form-control mb-3" style="width:300px;">
+
+             <div class="d-flex gap-2">
+                <button class="btn btn-warning flex-fill" id="add-cart">Add to Cart</button>
+      
+              </div>
     
-     <button class="view" style="height: 40px;width: 100%;border-radius: 40px; background:linear-gradient(135deg, #bf00e6, #f69, #ff9f1a);; outline: none; border:none; color: white;margin-top: 3px;">perchase</button>
+     <button class="view mt-5" style="height: 40px;width: 350px;  border-radius: 40px; background:linear-gradient(135deg, #bf00e6, #f69, #ff9f1a);; outline: none; border:none; color: white;margin-top: 3px;">perchase</button>
   </div>
 
                 
@@ -182,8 +190,8 @@
 
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-success">Save changes</button>
       </div>
     </div>
   </div>
