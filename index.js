@@ -119,7 +119,7 @@ document.querySelector('.prev').addEventListener('click', () => {
     for (let data of json){
 
       html +=   `
-      <div class="col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center" ">
+      <div class="col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center mb-5" >
       <div class="card" style="width: 16rem;border: none;"  >
 
                <img src="${data.p_image}" alt="..."  style="border-radius: 20px;">

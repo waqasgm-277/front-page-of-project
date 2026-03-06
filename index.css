@@ -1,4 +1,4 @@
-/* ================= GLOBAL ================= */
+/*  GLOBAL  */
 * {
     padding: 0;
     margin: 0;
@@ -15,7 +15,7 @@ a:visited {
 }
 
 
-/* ================= NAVBAR ================= */
+/* NAVBAR  */
 nav {
     width: 100%;
     height: 110px;
@@ -57,7 +57,7 @@ nav ul li a:hover {
     text-decoration: none; 
 }
 
-/* ================= DROPDOWN ================= */
+/*DROPDOWN  */
 nav ul li ul {
     position: absolute;
     top: 100%;
@@ -91,7 +91,7 @@ nav ul li:focus-within > ul {
     display: block;
 }
 
-/* ================= SEARCH ================= */
+                /* search btn  */
 .search-container {
     display: flex;
     align-items: center;
@@ -125,7 +125,7 @@ input {
     color: white;
 }
 
-/* ================= MENU ICON ================= */
+             /* menu icon  */
 .menu {
     font-size: 28px;
     color: white;
@@ -138,7 +138,7 @@ input {
     align-self: center;
 }
 
-/* ================= MOBILE RESPONSIVE ================= */
+/*     navbar responsive*/
 @media (max-width: 1150px) {
 
     .menu {
@@ -229,7 +229,7 @@ input {
 }
 
 
-/* ================= ANNOUNCEMENT BAR ================= */
+/*  ANNOUNCEMENT BAR  */
 .announcement-bar {
   width: 100%;
   height: 40px;
@@ -269,7 +269,7 @@ input {
   opacity: 0;
 }
 
-/* ================= SLIDER ================= */
+/* SLIDER */
 .slider {
   width: 100%;
   position: relative;
@@ -307,7 +307,7 @@ input {
   background: rgba(0,0,0,0.8);
 }
 
-/* ================= CIRCLE SECTION ================= */
+/*  CIRCLE SECTION */
 .circle-section {
     display: flex;
     justify-content: center;
@@ -342,7 +342,7 @@ input {
     font-size: 14px;
 }
 
-/* ================= BRAND MARQUEE ================= */
+                  /* BRAND MARQUEE */
 .brand-marquee {
   width: 100%;
   height: 100px;
@@ -364,7 +364,7 @@ input {
 
 .brand {
   margin: 0 80px;
-  font-size: 40px;
+  font-size: 30px;
   font-weight: 700;
   color: #111;
   white-space: nowrap;
@@ -381,7 +381,16 @@ input {
   to { transform: translateX(-50%); }
 }
 
-/* ================= CARD ================= */
+@media (max-width: 1200px){
+
+    .brand-marquee{
+
+        height: 60px;
+    }
+
+}
+
+              /* cards here  */
 .pro-name {
   display: inline;
 }
@@ -401,7 +410,7 @@ input {
   display: inline;
 }
 
-/* ================= RESPONSIVE SMALL ================= */
+                       /* slider responsive  */
 @media (max-width:600px){
 
     .slides img{
