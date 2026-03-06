@@ -122,7 +122,8 @@ document.querySelector('.prev').addEventListener('click', () => {
       <div class="col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center mb-5" >
       <div class="card" style="width: 16rem;border: none;"  >
 
-               <img src="${data.p_image}" alt="..."  style="border-radius: 20px;">
+           <img src="${data.p_image}" class="product-img" alt="..." style="border-radius: 20px;">
+
 
            <div class="card-body">
 
@@ -139,10 +140,12 @@ document.querySelector('.prev').addEventListener('click', () => {
 
     }
 
+
        document.getElementById('p-list').innerHTML = html
 
 
  })
+
 
 
 // modal view on click 
