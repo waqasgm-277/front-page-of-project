@@ -2,75 +2,75 @@
 
 {
     "p_id": 1,
-    "p_name": "card1",
-    "p_description":"its the best toy you will get for your kid",
+    "p_name": "Electric Bubble Machine",
+    "p_description":"it can blow out hundreds of bubbles per second.",
     "P_rating":"5",
-    "p_price":"1400",
+    "p_price":"1,400",
     "p_image":"/cards-images/1_1946x_51c57159-bb7d-4ac9-8f0b-7bf659a3f88e_375x.webp"
 },
 
 {
     "p_id": 2,
-    "p_name": "card2",
-    "p_description":"its the best toy you will get for your kid",
+    "p_name": "Road Climber Truck",
+    "p_description":"Durable tires for climbing and extreme outdoor adventures.",
     "P_rating":"5",
-    "p_price":"8678",
+    "p_price":"6,999",
     "p_image":"/cards-images/1d27f378-3577-4a3b-ac55-914965ea8f55_375x.webp"
 },
 
 {
     "p_id": 3,
-    "p_name": "card3",
+    "p_name": "Ball Shooter Shield",
     "p_description":"its the best toy you will get for your kid",
     "P_rating":"5",
-    "p_price":"1234",
+    "p_price":"4,890",
     "p_image":"/cards-images/4_13f3f0c8-b84c-4349-bb5e-c6546e693a04_375x.webp"
 },
 
 {
     "p_id": 4,
-    "p_name": "card4",
-    "p_description":"its the best toy you will get for your kid",
+    "p_name": "Throwing Parachute ",
+    "p_description":"High-quality parachutes are made of non-toxic",
     "P_rating":"5",
-    "p_price":"1111",
+    "p_price":"790",
     "p_image":"/cards-images/4b324880-217d-499d-8708-91238cb7dad8_375x.webp"
 },
 
 {
     "p_id": 5,
-    "p_name": "card4345",
-    "p_description":"its the best toy you will get for your kid",
-    "P_rating":"345",
-    "p_price":"134511",
-    "p_image":"/cards-images/4b324880-217d-499d-8708-91238cb7dad8_375x.webp"
+    "p_name": "Naruto Action Figure",
+    "p_description":"Bring home the adventure of naruto series figure",
+    "P_rating":"5",
+    "p_price":"2,550",
+    "p_image":"/cards-images/569058386_1226586452855562_4401052088923585207_n_375x.webp"
 },
 
 
 {
     "p_id": 3,
-    "p_name": "card3",
-    "p_description":"its the best toy you will get for your kid",
+    "p_name": "Fun Train",
+    "p_description":"Realistic Train & Track with Light",
     "P_rating":"5",
-    "p_price":"1234",
-    "p_image":"/cards-images/4_13f3f0c8-b84c-4349-bb5e-c6546e693a04_375x.webp"
+    "p_price":"6,660",
+    "p_image":"/cards-images/carimage.webp"
 },
 
 {
     "p_id": 2,
-    "p_name": "card2",
-    "p_description":"its the best toy you will get for your kid",
+    "p_name": "Fishing Game With Light ",
+    "p_description":"An exciting interactive fishing game",
     "P_rating":"5",
     "p_price":"8678",
-    "p_image":"/cards-images/1d27f378-3577-4a3b-ac55-914965ea8f55_375x.webp"
+    "p_image":"/cards-images/de72f7cd-4d15-451d-8a34-8cd25f12b0a9_375x.webp"
 },
 
 {
     "p_id": 1,
-    "p_name": "card1",
-    "p_description":"its the best toy you will get for your kid",
+    "p_name": "Double Track Launcher",
+    "p_description":"Turn playtime into a high-speed rescue mission with this exciting Car Launcher",
     "P_rating":"5",
     "p_price":"1400",
-    "p_image":"/cards-images/1_1946x_51c57159-bb7d-4ac9-8f0b-7bf659a3f88e_375x.webp"
+    "p_image":"/cards-images/dws_375x.webp"
 }
 
 

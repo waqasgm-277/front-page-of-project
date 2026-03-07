@@ -119,7 +119,7 @@ document.querySelector('.prev').addEventListener('click', () => {
     for (let data of json){
 
       html +=   `
-      <div class="col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center mb-5" >
+      <div class="col-lg-3 col-md-4 col-sm-3 d-flex justify-content-center mb-5" >
       <div class="card" style="width: 16rem;border: none;"  >
 
            <img src="${data.p_image}" class="product-img" alt="..." style="border-radius: 20px;">
@@ -127,7 +127,7 @@ document.querySelector('.prev').addEventListener('click', () => {
 
            <div class="card-body">
 
-         <h4 class="card-title pro-name">${data.p_name}</h4>
+         <h5 class="card-title pro-name">${data.p_name}</h5>
         <div class="pro-description">${data.p_description}</div>
           <p class="pro-rating"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
           <p class="pro-price">price <span style="font-size: 30px;">${data.p_price}</span></p>
@@ -192,7 +192,7 @@ $(document).on('click','.view',function(e){
 
 // add to cart 
 
-$(document).on(click,'#add-cart',function(){
+$(document).on("click",'#add-cart',function(){
 
 
   let product = $(this).data('product');
@@ -201,8 +201,7 @@ $(document).on(click,'#add-cart',function(){
 
   let found = false 
 
-  for (let item of cart ) {
-
+  for (let item of cart ) {                                // one problem here
     if (item.id == product.id){
         item.qty += qty;
         found = true

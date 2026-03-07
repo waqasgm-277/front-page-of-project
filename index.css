@@ -351,7 +351,7 @@ input {
                         /* BRAND MARQUEE */
 .brand-marquee {
   width: 100%;
-  height: 100px;
+  height: 90px;
   overflow: hidden;
   background: linear-gradient(135deg, #6febd6, rgb(255, 141, 179), #fac47a);
   padding: 15px 0;
@@ -388,6 +388,12 @@ input {
 }
 
 @media (max-width: 1200px){
+
+
+    .brand {
+
+        font-size: 27px;
+    }
 
     .brand-marquee{
 
