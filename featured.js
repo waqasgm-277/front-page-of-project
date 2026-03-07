@@ -1,4 +1,4 @@
-              //  navbar responsive li starts 
+            //  navbar responsive li starts 
 
    //  NAVBAR MOBILE TOGGLE + DROPDOWN 
 
@@ -72,38 +72,6 @@ bar.addEventListener('mouseleave', startTicker);
 startTicker();
 
                       // discounts bar ends here 
-
-
-
-
-                      // slider starts here 
-
-const slides = document.querySelector('.slides')
-const images = document.querySelectorAll('.slides img');
-
-let index = 0;
-
-function showSlide() {
-  slides.style.transform = `translateX(-${index * 100}%)`
-}
-
-document.querySelector('.next').addEventListener('click', () => {
-  index++;
-  if (index >= images.length) {
-    index = 0;
-  }
-  showSlide();
-});
-
-document.querySelector('.prev').addEventListener('click', () => {
-  index--;
-  if (index < 0) {
-    index = images.length - 1;
-  }
-  showSlide();
-});                      
-
-                      // slider ends here bruh
 
 
       // json work here 
@@ -223,5 +191,3 @@ $(document).on("click",'#add-cart',function(){
 
 
 })
-
-
