@@ -79,7 +79,7 @@ startTicker();
  let html = "" 
 
 
- fetch('index.json')
+ fetch('featured.json')
 
  .then (response => response.json())
  .then(json => {
@@ -126,7 +126,7 @@ $(document).on('click','.view',function(e){
   let myid = $(this).data('id')
 
 
-  fetch('index.json')  //json string se js object convert hogya
+  fetch('featured.json')  //json string se js object convert hogya
 
 .then(response => response.json())
 .then(json =>{

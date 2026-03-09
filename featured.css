@@ -240,6 +240,7 @@ input {
   justify-content: center;
   position: relative;
   z-index: 1;
+  
 }
 
 .announcement-wrapper {
@@ -270,59 +271,13 @@ input {
   opacity: 0;
 }
 
-                 /* discount bar over here  
+                 /* discount bar over here  */
               
-                          /*  CIRCLE SECTION */
+                         
 
 
-.circle-section {
-    display: flex;
-    justify-content: center;
-    gap: 60px;
-    padding: 20px 10px;
-    flex-wrap: wrap;
-    background-color: #fff;
-}
-
-.circle-card {
-    text-align: center;
-    color: #333;
-}
-
-.circle-card img {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 4px solid rgb(228, 100, 100);
-    transition: 0.3s ease;
-}
-
-.circle-card:hover img {
-    transform: scale(1.08);
-    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-}
-
-.circle-card p {
-    margin-top: 8px;
-    font-weight: bold;
-    font-size: 14px;
-}
 
 @media (max-width:600px){
-
-  
-
-    .circle-section{
-        gap: 25px;
-    }
-
-   
-
-    .circle-card img{
-        width: 90px;
-        height: 90px;
-    }
 
     input {
         width: 78%;
@@ -330,7 +285,134 @@ input {
 }
 
 
+                   /* most popular toys here  */
 
+
+                   .arrival{
+   
+    text-align: center;
+    background-color: rgb(243, 243, 241);
+    padding: 30px 10px;
+    width: 100%;
+}
+
+.arri{
+    font-size:50px;
+    font-weight: bold;
+}
+
+.para1{
+    font-size: 40px;
+}
+
+.para2{
+    font-size: 25px;
+}
+
+@media (max-width:768px){
+
+.arri{
+    font-size:32px;
+}
+
+.para1{
+    font-size:24px;
+}
+
+.para2{
+    font-size:18px;
+}
+
+}
+
+.main-btn{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:15px;
+padding:20px;
+margin-bottom: 60px;
+}
+
+
+.btn{
+border:none;
+padding:10px 20px;
+font-size:16px;
+font-weight:600;
+color:white;
+border-radius:50px;
+cursor:pointer;
+transition:0.3s;
+}
+
+
+.btn:hover{
+transform:scale(1.08);
+}
+
+
+.web{
+background:linear-gradient(45deg,#ff8bd8,#c86cff);
+}
+
+.ecommerce{
+background:linear-gradient(45deg,#ffb3c1,#ff7e95);
+}
+
+.design{
+background:linear-gradient(45deg,#ff9ac4,#ff6fa7);
+}
+
+.marketing{
+background:linear-gradient(45deg,#ffb6b9,#ff7f8c);
+}
+
+.social{
+background:linear-gradient(45deg,#7ab6ff,#4f8cff);
+}
+
+.seo{
+background:linear-gradient(45deg,#7da7ff,#5f6cff);
+}
+
+.business{
+background:linear-gradient(45deg,#9aa8ff,#7b7bff);
+}
+
+.guides{
+background:linear-gradient(45deg,#a78bfa,#6366f1);
+}
+
+.ai{
+background:linear-gradient(45deg,#d18bff,#8b5cf6);
+}
+
+.news{
+background:linear-gradient(45deg,#7c83ff,#4f46e5);
+}
+
+@media(max-width:768px){
+
+.btn{
+font-size:14px;
+padding:8px 15px;
+}
+
+.main-btn{
+gap:10px;
+}
+
+}
+
+
+               /* most popular  section ends here  */
+
+
+
+
+
+               
                       /* cards here  */
 .pro-name {
   display: inline;
@@ -407,4 +489,92 @@ input {
 .pro-discription{
   word-wrap: break-word;
   overflow-wrap: break-word;
+}
+
+
+
+
+
+                     /* footer starts here  */
+
+
+ .container{
+    max-width: 1170px;
+    margin: auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+ul{
+    list-style: none;
+}
+.footer{
+    background-color: #041a53;
+    padding: 70px 0;
+}
+.footer-col{
+    width: 25%;
+    padding: 0 15px;
+}
+.footer-col h4{
+    font-size: 18px;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+}
+.footer-col h4::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+.footer-col ul li:not(:last-child){
+    margin-bottom: 10px;
+}
+.footer-col ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+    color: #ffffff;
+    padding-left: 8px;
+}
+.footer-col .social-links a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgb(251, 167, 12);
+    margin:0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: black;
+    transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+    background-color: #e4e1e1;
+}
+                   /* responsive */
+@media(max-width: 767px){
+    .footer-col{
+        width: 50%;
+        margin-bottom: 30px;
+    }
+}
+@media(max-width: 574px){
+    .footer-col{
+        width: 100%;
+    }
 }
