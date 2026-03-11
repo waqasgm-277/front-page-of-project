@@ -120,12 +120,12 @@ document.querySelector('.prev').addEventListener('click', () => {
 
       html +=   `
       <div class="col-lg-3 col-md-4 col-sm-3 d-flex justify-content-center mb-5" >
-      <div class="card" style="width: 16rem;border: none;"  >
+      <div class="card" style="width: 16rem;border: none; "  >
 
-           <img src="${data.p_image}" class="product-img" alt="..." style="border-radius: 20px;">
+           <img src="${data.p_image}" class="product-img" alt="..." style="border-radius: 20px;box-shadow: 0px 0px 3px 0px  gray;">
 
 
-           <div class="card-body">
+           <div class="card-body" style="box-shadow: 0px 0px 1.20px 0px  gray;border-radius:10px" >
 
          <h5 class="card-title pro-name">${data.p_name}</h5>
         <div class="pro-description card-preview">  ${data.p_description}</div>
@@ -136,7 +136,7 @@ document.querySelector('.prev').addEventListener('click', () => {
      
     
   </div>
-   <a href="/links-cards/Syed_Waqas_Shah_Sales_Executive_CV_One_Page (1).pdf" class="btn btn-success" download" style="border-radius: 40px;">download</a> 
+   <a href="${data.p_link}" class="btn btn-success" download" style="border-radius: 40px;" download>download</a> 
 </div>
 </div>`
 
