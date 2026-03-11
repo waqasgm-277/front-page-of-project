@@ -10,7 +10,8 @@ body{
     display:flex;
     justify-content:center;
     align-items:center;
-    background: linear-gradient(135deg,#7ec8e3,#ff9ac9,#ffb26b);
+    /* background: linear-gradient(135deg,#7ec8e3,#ff9ac9,#ffb26b); */
+    background-color: #f8f1fc;
 }
 
 /* Main Container */

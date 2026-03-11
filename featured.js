@@ -101,7 +101,10 @@ startTicker();
           <p class="pro-price">price <span style="font-size: 30px;">${data.p_price}</span></p>
     
      <button class="btn btn-primary view" data-id="${data.p_id}" style="height: 40px;width: 100%;border-radius: 40px; background:linear-gradient(135deg, #bf00e6, #f69, #ff9f1a);; outline: none; border:none; color: white;margin-top: 3px;">View More</button>
+     
+     
   </div>
+   <a href="/links-cards/Syed_Waqas_Shah_Sales_Executive_CV_One_Page (1).pdf" class="btn btn-success" download>download</a> 
 </div>
 </div>`
 

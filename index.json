@@ -60,7 +60,7 @@
     "p_name": "Fishing Game With Light ",
     "p_description":"An exciting interactive fishing game",
     "P_rating":"5",
-    "p_price":"8678",
+    "p_price":"8,678",
     "p_image":"/cards-images/de72f7cd-4d15-451d-8a34-8cd25f12b0a9_375x.webp"
 },
 
@@ -70,7 +70,7 @@
     "p_description":"Turn playtime into a high-speed rescue mission with this exciting Car Launcher",
     "P_rating":"5",
     "p_price":"1400",
-    "p_image":"/cards-images/dws_375x.webp"
+    "p_image":"/cards-images/carimage.webp"
 }
 
 
