@@ -1,4 +1,4 @@
-            //  navbar responsive li starts 
+     //  navbar responsive li starts 
 
    //  NAVBAR MOBILE TOGGLE + DROPDOWN 
 
@@ -43,35 +43,6 @@ document.addEventListener("DOMContentLoaded", function() {
 
                       //  navbar responsive li over 
 
-                      // discount bar starts here 
-
-const announcements = document.querySelectorAll('.announcement');
-const bar = document.getElementById('announcementBar');
-let current = 0;
-let interval;
-
-function startTicker() {
-  interval = setInterval(() => {
-    announcements[current].classList.remove('active');
-    announcements[current].classList.add('exit');
-
-    current = (current + 1) % announcements.length;
-
-    announcements[current].classList.remove('exit');
-    announcements[current].classList.add('active');
-  }, 2500);
-}
-
-function stopTicker() {
-  clearInterval(interval);
-}
-
-bar.addEventListener('mouseenter', stopTicker);
-bar.addEventListener('mouseleave', startTicker);
-
-startTicker();
-
-                      // discounts bar ends here 
 
 
       // json work here 
@@ -79,7 +50,7 @@ startTicker();
  let html = "" 
 
 
- fetch('featured.json')
+ fetch('7-year-old.json')
 
  .then (response => response.json())
  .then(json => {
@@ -129,7 +100,7 @@ $(document).on('click','.view',function(e){
   let myid = $(this).data('id')
 
 
-  fetch('featured.json')  //json string se js object convert hogya
+  fetch('7-year-old.json')  //json string se js object convert hogya
 
 .then(response => response.json())
 .then(json =>{

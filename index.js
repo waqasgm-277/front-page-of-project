@@ -136,7 +136,7 @@ document.querySelector('.prev').addEventListener('click', () => {
      
     
   </div>
-   <a href="${data.p_link}" class="btn btn-success" download" style="border-radius: 40px;" download>download</a> 
+   <a href="${data.p_link}" class="btn " download" style="border-radius: 40px;background-Color:blue;color:white" download>download</a> 
 </div>
 </div>`
 
