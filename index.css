@@ -433,6 +433,8 @@ input {
   transform: scale(1.08);
 }
 
+
+
            /*  card image zoom on hover  */
 .product-img{
   transition: transform 0.3s ease;

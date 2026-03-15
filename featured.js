@@ -90,10 +90,10 @@ startTicker();
       <div class="col-lg-3 col-md-4 col-sm-3 d-flex justify-content-center mb-5" >
       <div class="card" style="width: 16rem;border: none;"  >
 
-           <img src="${data.p_image}" class="product-img" alt="..."  style="border-radius: 20px;box-shadow: 0px 0px 3px 0px  gray;"">
+           <img src="${data.p_image}" class="product-img" alt="..."  style="border-radius: 20px;box-shadow: 0px 0px 3px 0px  gray;">
 
 
-           <div class="card-body" style="box-shadow: 0px 0px 1.20px 0px  gray;border-radius:10px">
+           <div class="card-body" style="box-shadow: 0px 0px 3px 0px  gray;;border-radius:10px">
 
          <h5 class="card-title pro-name">${data.p_name}</h5>
         <div class="pro-description card-preview">  ${data.p_description}</div>

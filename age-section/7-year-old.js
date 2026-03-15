@@ -64,7 +64,7 @@ document.addEventListener("DOMContentLoaded", function() {
            <img src="${data.p_image}" class="product-img" alt="..."  style="border-radius: 20px;box-shadow: 0px 0px 3px 0px  gray;"">
 
 
-           <div class="card-body" style="box-shadow: 0px 0px 1.20px 0px  gray;border-radius:10px">
+           <div class="card-body" style="box-shadow: 0px 0px 3px 0px  gray;border-radius:10px">
 
          <h5 class="card-title pro-name">${data.p_name}</h5>
         <div class="pro-description card-preview">  ${data.p_description}</div>
