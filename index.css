@@ -85,19 +85,19 @@ nav ul li ul li ul {
     left: 100%;
 }
 
-/* Hover + Focus-within */
+                   /* Hover + Focus-within */
 nav ul li:hover > ul,
 nav ul li:focus-within > ul {
     display: block;
 }
 
-                /* search btn  */
+                         /* search btn  */
 .search-container {
     display: flex;
     align-items: center;
 }
 
-input {
+/* input {
     border-radius: 20px;
     height: 35px;
     width: 250px;
@@ -106,8 +106,8 @@ input {
     border: none;
     outline: none;
     background-color: #f7f8fa;
-}
-
+} */
+/* 
 .icon-btn {
     width: 41px;
     height: 35px;
@@ -124,7 +124,7 @@ input {
 #search-icon {
     font-size: 14px;
     color: white;
-}
+} */
 
              /* menu icon  */
 .menu {
